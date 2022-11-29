@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Lucky Aces</string>
+    <string name="title_activity_challenge">ChallengeActivity</string>
+    <string name="title_activity_testimonials">TestimonialsActivity</string>
+    <string name="title_activity_create_tesimonial">CreateTesimonialActivity</string>
+    <string name="text_johnny">Johnny</string>
+    <string name="text_johnny_aces">Johnny Aces</string>
+    <string name="text_johnny_the_story">The Story of Johnny Aces</string>
+    <string name="menu_item_main">Main Screen</string>
+    <string name="menu_item_story">The Story of Johnny Aces</string>
+    <string name="menu_item_challenge">Johnny\'s Lucky Aces</string>
+    <string name="menu_item_testimonials">Lucky Testimonials</string>
+    <string name="menu_item_gear">Johnny Aces Gear</string>
+    <string name="menu_item_share">Share on Social Media</string>
+    <string name="notif_title">A Reminder to Look for Luck!</string>
+    <string name="notif_body">When you get the Johnny Aces notification, Start Looking for Luck!</string>
+
+    <string name="notification_channel_description">Luck Aces Notification</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="story">
+        Las Vegas, Nevada \n\n In a rundown casino far off the strip, Johnny is dealing his last hand of the night. He’s paying close attention to a couple of old-time poker players tell a tale. \n\n \"The Las Vegas Gambling Museum closes for good, tonight. There’s a pair of lucky aces in a glass display case. The aces will bring good luck to anyone who can possess them, without breaking the glass.\" \n\n Johnny has decided to take a chance. The museum doors start to close and he bluffs his way in. He’s looking for an opportunity to open the glass display case. Suddenly, the air conditioner unit malfunctions and the room starts to freeze.   Johnny waits. Soon enough the glass case frosts and shatters, like a block of ice. The alarm sounds as he reaches in and grabs a deck of cards. \n\n It’s a moonlit night and Johnny is quickly heading home. His only thoughts are about what is tightly held in his hand. He’s positive that it will help him find good luck to get him out of the muck he’s in. \n\n Meanwhile, the curator rushes into the museum and sees the shattered glass and a deck of cards on the floor. He picks them up and fans through the deck. A slight smile comes to his face, two aces are missing. \n\n This is the story of Johnny Aces \n\n\n\n
+    </string>
+
+    <string name="story_button_title">
+        Johnny\'s Lucky Aces
+    </string>
+
+    <string name="testimonial_name">Your Name</string>
+    <string name="testimonial_email">Email Address</string>
+    <string name="testimonial_lucky">Your Lucky Testimonial</string>
+    <string name="testimonial_about_us">Contact us: JohnnyAcesApp@gmail.co</string>
+
+    <string name="challenge_title">Johnny\'s Lucky Aces</string>
+    <string name="challenge_description">The Power of Luck \n\n Chance opportunities happen all the time. Look for luck
+        by paying attention to your surroundings, and act on it in a positive way.
+    </string>
+    <string name="challenge_top">Johnny\'s Lucky Aces will play 5 sec. of music once, over the next 24 hours</string>
+    <string name="challenge_bottom">A reminder to look for luck!</string>
+
+    <string name="challenge_button_on">On</string>
+    <string name="challenge_button_off">Off</string>
+    <string name="title_activity_webview">WebviewActivity</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="100px">
+
+    <group android:checkableBehavior="single">
+
+        <item
+                android:id="@+id/nav_home"
+                android:title="@string/menu_item_main"/>
+        <item
+                android:id="@+id/nav_story"
+                android:title="@string/menu_item_story"/>
+        <item
+                android:id="@+id/nav_challenge"
+                android:title="@string/menu_item_challenge"/>
+        <item
+                android:id="@+id/nav_tesimonials"
+                android:title="@string/menu_item_testimonials"/>
+        <item
+                android:id="@+id/nav_gear"
+                android:title="@string/menu_item_gear"/>
+        <item
+                android:id="@+id/nav_share"
+                android:title="@string/menu_item_share"/>
+
+    </group>
+</menu>

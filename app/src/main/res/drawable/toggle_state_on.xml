@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+
+            <solid
+                android:color="#4c975d"
+            />
+            <size
+                    android:width="120dp"
+                    android:height="120dp"/>
+
+        </shape>
+    </item>
+    <!-- Overlap the left, top and right border using background color  -->
+    <!--<item-->
+            <!--android:bottom="5dp"-->
+    <!--&gt;-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="#6dd988"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+</layer-list>

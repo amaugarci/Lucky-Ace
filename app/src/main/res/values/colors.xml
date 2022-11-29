@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorClear">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorChallengeButtonBackground">#4c975d</color>
+<!--    <color name="colorChallengeButtonBackground">#FF29FF19</color>-->
+    <color name="colorChallengeButtonText">#FF29FF19</color>
+    <color name="colorJohnnyBlue">#FF03A9F4</color>
+</resources>

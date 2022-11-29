@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:contentDescription="@string/text_johnny"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/finalgif"/>>
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" app:srcCompat="@drawable/finalgif" android:id="@+id/imageView"-->
+            <!--/>-->
+    <Button
+            android:id="@+id/storyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="80dp"
+            android:background="#FEFEFE"
+            android:text="@string/text_johnny_the_story"
+            android:textColor="#03A9F4"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:id="@+id/acesButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="50dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#00FFFFFF"
+            android:cursorVisible="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

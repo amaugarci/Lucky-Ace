@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fitsSystemWindows="true">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#03A9F4">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@drawable/only_background">
+
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/challenge_title"
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:text="@string/challenge_title"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/challenge_title" />
+
+            <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/helvetica_neue_medium"
+                    android:text="@string/challenge_bottom"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/challengeToggleButton" />
+
+            <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:text="@string/challenge_description"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/helvetica_neue_bold"
+                    android:text="@string/challenge_top"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/challengeToggleButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            <ToggleButton
+                    android:id="@+id/challengeToggleButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginBottom="45dp"
+                    android:textOff="@string/challenge_button_off"
+
+                    android:textOn="@string/challenge_button_on"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            <!--android:background="@drawable/button_background_rounded_corners"-->
+            <!--android:background="@color/colorWhite" -->
+        </android.support.constraint.ConstraintLayout>
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    </FrameLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>
+
+<!--<android.support.constraint.ConstraintLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:context=".ChallengeActivity" android:id="@+id/coordinatorLayout">-->
+
+
+    <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<android.support.design.widget.AppBarLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/AppTheme.AppBarOverlay">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:popupTheme="@style/AppTheme.PopupOverlay"/>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</android.support.design.widget.AppBarLayout>&ndash;&gt;-->
+
+    <!--<include layout="@layout/content_challenge"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:layout_width="wrap_content" android:id="@+id/include"/>-->
+
+
+    <!--<android.support.v4.widget.DrawerLayout-->
+            <!--android:id="@+id/drawer_layout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fitsSystemWindows="true"-->
+    <!--&gt;-->
+
+         <!--Layout to contain contents of main body of screen (drawer will slide over this)-->
+        <!--<FrameLayout-->
+        <!--android:id="@+id/content_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="?attr/colorPrimary"-->
+                <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+        <!--</FrameLayout>-->
+
+        <!--&lt;!&ndash; Container for contents of drawer - use NavigationView to make configuration easier &ndash;&gt;-->
+        <!--<android.support.design.widget.NavigationView-->
+                <!--android:id="@+id/nav_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:menu="@menu/drawer_view"-->
+        <!--/>-->
+
+    <!--</android.support.v4.widget.DrawerLayout>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
